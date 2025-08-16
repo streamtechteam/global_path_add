@@ -48,7 +48,7 @@ When you run `global_path_add` with an **absolute directory path**, it:
 
 ```bash
 # Clone the repository
-git clone <repository-url>
+git clone https://github.com/streamtechteam/global_path_add.git
 cd global_path_add
 
 # Build the project
@@ -63,7 +63,7 @@ cargo build --release
 To install the tool globally on your system:
 
 ```bash
-cargo install --path .
+cargo install --path ./
 ```
 
 ## Usage
