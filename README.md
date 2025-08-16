@@ -9,7 +9,7 @@ A Rust utility for easily adding directories to your system's PATH environment v
 This project is in a pre-alpha stage and has significant limitations:
 
 - Only works with absolute paths (relative paths not supported)
-- Fish shell support is not implemented (files are created but not functional)
+- Fish shell support is semi-implemented (files are created but not fully functional)
 - Not thoroughly tested
 - May have bugs or unexpected behavior
 
@@ -21,7 +21,7 @@ Global Path Add is a command-line tool that simplifies the process of permanentl
 
 The tool is planned to support multiple shell environments:
 - Bash (partially implemented)
-- Fish shell (not yet implemented)
+- Fish shell (semi-implemented)
 - Other shells (planned through a common configuration approach)
 
 ## How It Works (Current Implementation)
@@ -31,12 +31,12 @@ When you run `global_path_add` with an **absolute directory path**, it:
 1. Creates a configuration directory at `~/.gpath_add/vars/`
 2. Generates shell-specific configuration files:
    - `bash.sh` for Bash shell configurations
-   - `fish.sh` for Fish shell configurations (currently just a placeholder)
+   - `fish.sh` for Fish shell configurations (semi-implemented)
    - `vars.sh` for a universal source file
 3. Modifies your `~/.bashrc` file to source the configuration files
 4. Adds your specified **absolute** directory path to the PATH environment variable
 
-**Note:** Fish shell support is not yet implemented. The tool currently focuses on Bash shell integration.
+**Note:** Fish shell support is semi-implemented. The tool currently focuses on Bash shell integration.
 
 ## Installation
 
@@ -101,12 +101,12 @@ source ~/.gpath_add/vars/vars.sh
 The tool creates the following files in your home directory:
 
 - `~/.gpath_add/vars/bash.sh` - Bash-specific PATH modifications (implemented)
-- `~/.gpath_add/vars/fish.sh` - Fish shell PATH modifications (placeholder only - not implemented)
+- `~/.gpath_add/vars/fish.sh` - Fish shell PATH modifications (semi-implemented)
 - `~/.gpath_add/vars/vars.sh` - Universal source file that loads both bash and fish configurations
 
 It also modifies your `~/.bashrc` file to automatically source the configuration on shell startup.
 
-**Note:** Fish shell support is not yet implemented. The `fish.sh` file is created but not populated with functional code.
+**Note:** Fish shell support is semi-implemented. The `fish.sh` file is created but not fully populated with functional code.
 
 ## How to Verify
 

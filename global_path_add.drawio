@@ -1,40 +1,40 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/27.0.9 Chrome/134.0.6998.205 Electron/35.4.0 Safari/537.36" version="27.0.9">
   <diagram name="Page-1" id="IuOMLuuZL-2t-MoxlcW7">
-    <mxGraphModel dx="968" dy="568" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1404" dy="824" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="Q9ISaMEYmn4FfeO0_63k-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Q9ISaMEYmn4FfeO0_63k-1" target="Q9ISaMEYmn4FfeO0_63k-3">
+        <mxCell id="Q9ISaMEYmn4FfeO0_63k-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Q9ISaMEYmn4FfeO0_63k-1" target="Q9ISaMEYmn4FfeO0_63k-3" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Q9ISaMEYmn4FfeO0_63k-1" value="Start" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="Q9ISaMEYmn4FfeO0_63k-1" value="Start" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="380" y="260" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="Q9ISaMEYmn4FfeO0_63k-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Q9ISaMEYmn4FfeO0_63k-2" target="Q9ISaMEYmn4FfeO0_63k-20">
+        <mxCell id="Q9ISaMEYmn4FfeO0_63k-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="Q9ISaMEYmn4FfeO0_63k-2" target="Q9ISaMEYmn4FfeO0_63k-20" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Q9ISaMEYmn4FfeO0_63k-2" value="arg exist" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="Q9ISaMEYmn4FfeO0_63k-2" value="arg exist" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="260" y="400" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="Q9ISaMEYmn4FfeO0_63k-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Q9ISaMEYmn4FfeO0_63k-3" target="Q9ISaMEYmn4FfeO0_63k-6">
+        <mxCell id="Q9ISaMEYmn4FfeO0_63k-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Q9ISaMEYmn4FfeO0_63k-3" target="Q9ISaMEYmn4FfeO0_63k-6" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Q9ISaMEYmn4FfeO0_63k-3" value="arg dont exist" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="Q9ISaMEYmn4FfeO0_63k-3" value="arg dont exist" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="500" y="400" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="Q9ISaMEYmn4FfeO0_63k-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.617;entryY=0.007;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="Q9ISaMEYmn4FfeO0_63k-1" target="Q9ISaMEYmn4FfeO0_63k-2">
+        <mxCell id="Q9ISaMEYmn4FfeO0_63k-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.617;entryY=0.007;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="Q9ISaMEYmn4FfeO0_63k-1" target="Q9ISaMEYmn4FfeO0_63k-2" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Q9ISaMEYmn4FfeO0_63k-12" value="yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Q9ISaMEYmn4FfeO0_63k-6" target="Q9ISaMEYmn4FfeO0_63k-11">
+        <mxCell id="Q9ISaMEYmn4FfeO0_63k-12" value="yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Q9ISaMEYmn4FfeO0_63k-6" target="Q9ISaMEYmn4FfeO0_63k-11" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Q9ISaMEYmn4FfeO0_63k-17" value="no" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Q9ISaMEYmn4FfeO0_63k-6" target="Q9ISaMEYmn4FfeO0_63k-13">
+        <mxCell id="Q9ISaMEYmn4FfeO0_63k-17" value="no" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="Q9ISaMEYmn4FfeO0_63k-6" target="Q9ISaMEYmn4FfeO0_63k-13" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Q9ISaMEYmn4FfeO0_63k-6" value="does bashrc contain&amp;nbsp;&lt;div&gt;bash files ?&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+        <mxCell id="Q9ISaMEYmn4FfeO0_63k-6" value="does bashrc contain&amp;nbsp;&lt;div&gt;bash files ?&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
           <mxGeometry x="500" y="620" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="Q9ISaMEYmn4FfeO0_63k-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Q9ISaMEYmn4FfeO0_63k-9" target="Q9ISaMEYmn4FfeO0_63k-11">
+        <mxCell id="Q9ISaMEYmn4FfeO0_63k-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Q9ISaMEYmn4FfeO0_63k-9" target="Q9ISaMEYmn4FfeO0_63k-11" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="220" y="890" />
@@ -42,28 +42,28 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="Q9ISaMEYmn4FfeO0_63k-9" value="add path to local bashfiles" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+        <mxCell id="Q9ISaMEYmn4FfeO0_63k-9" value="add path to local bashfiles" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
           <mxGeometry x="160" y="740" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="Q9ISaMEYmn4FfeO0_63k-11" value="exit" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+        <mxCell id="Q9ISaMEYmn4FfeO0_63k-11" value="exit" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
           <mxGeometry x="700" y="620" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="Q9ISaMEYmn4FfeO0_63k-13" value="add path of bash files to bashrc" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+        <mxCell id="Q9ISaMEYmn4FfeO0_63k-13" value="add path of bash files to bashrc" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
           <mxGeometry x="500" y="770" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="Q9ISaMEYmn4FfeO0_63k-26" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Q9ISaMEYmn4FfeO0_63k-20" target="Q9ISaMEYmn4FfeO0_63k-22">
+        <mxCell id="Q9ISaMEYmn4FfeO0_63k-26" value="no" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Q9ISaMEYmn4FfeO0_63k-20" target="Q9ISaMEYmn4FfeO0_63k-22" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Q9ISaMEYmn4FfeO0_63k-20" value="does bashrc contain&amp;nbsp;&lt;div&gt;bash files ?&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+        <mxCell id="Q9ISaMEYmn4FfeO0_63k-20" value="does bashrc contain&amp;nbsp;&lt;div&gt;bash files ?&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
           <mxGeometry x="160" y="530" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="Q9ISaMEYmn4FfeO0_63k-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Q9ISaMEYmn4FfeO0_63k-22" target="Q9ISaMEYmn4FfeO0_63k-9">
+        <mxCell id="Q9ISaMEYmn4FfeO0_63k-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Q9ISaMEYmn4FfeO0_63k-22" target="Q9ISaMEYmn4FfeO0_63k-9" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Q9ISaMEYmn4FfeO0_63k-22" value="add path of bash files to bashrc" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+        <mxCell id="Q9ISaMEYmn4FfeO0_63k-22" value="add path of bash files to bashrc" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
           <mxGeometry x="160" y="640" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="Q9ISaMEYmn4FfeO0_63k-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1.002;entryY=0.674;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="Q9ISaMEYmn4FfeO0_63k-20" target="Q9ISaMEYmn4FfeO0_63k-9">
+        <mxCell id="Q9ISaMEYmn4FfeO0_63k-27" value="yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1.002;entryY=0.674;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="Q9ISaMEYmn4FfeO0_63k-20" target="Q9ISaMEYmn4FfeO0_63k-9" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="300" y="560" />

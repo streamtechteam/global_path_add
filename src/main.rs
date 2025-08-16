@@ -1,7 +1,5 @@
 use std::env;
 use std::fs;
-// use std::fs::exists;
-// use std::process;
 
 fn main() {
     let args: Vec<String> = env::args().collect();
@@ -22,16 +20,11 @@ fn main() {
         env::home_dir().expect("").to_str().expect("")
     ));
     let bashrc_path = String::from(env::home_dir().expect("").to_str().expect("")) + "/.bashrc";
-    //     println!(
-    //         "{}",
-    //         String::from_utf8_lossy(
-    //             &process::Command::new("./src/bash.sh").output().expect("F..k").stdout
+    let mut is_everything_ok = false;
 
-    //             // &process::Command::new("").arg("./bash.sh").output().expect("F..k").stdout
-    //         )
-    //     );
     if check_if_arg_exist(&args) {
         if check_if_starts(&bashrc_path, &local_vars_path) {
+            println!("Bashrc already contains the Source line for vars.sh");
             if check_if_dir_and_files_exist(
                 String::clone(&local_dir_path),
                 String::clone(&local_bash_path),
@@ -39,21 +32,10 @@ fn main() {
                 String::clone(&local_vars_path),
             ) == true
             {
-                println!("using");
-                let perv = read_from_local(&local_bash_path, &local_fish_path);
-                write_to_local(
-                    &local_bash_path,
-                    &local_fish_path,
-                    &local_vars_path,
-                    format!("{} \n ", perv[0]),
-                    format!("{} \n export PATH=\"{}:$PATH\"", perv[1], &args[1]),
-                    format!(
-                        "source \"{}\" \n source \"{}\"",
-                        local_bash_path, local_fish_path
-                    ),
-                );
+                println!("Bash files exist , Adding to path");
+                is_everything_ok = true;
             } else {
-                println!("creating");
+                println!("Bash files not found, Creating them now");
                 create_config_dir_and_files(
                     String::clone(&local_dir_path),
                     String::clone(&local_bash_path),
@@ -62,6 +44,7 @@ fn main() {
                 );
             }
         } else {
+            println!("Bashrc does not contain the Source line for vars.sh \n Adding it now.");
             write_to_bashrc(&bashrc_path);
             if check_if_dir_and_files_exist(
                 String::clone(&local_dir_path),
@@ -70,21 +53,10 @@ fn main() {
                 String::clone(&local_vars_path),
             ) == true
             {
-                println!("using");
-                let perv = read_from_local(&local_bash_path, &local_fish_path);
-                write_to_local(
-                    &local_bash_path,
-                    &local_fish_path,
-                    &local_vars_path,
-                    format!("{} \n ", perv[0]),
-                    format!("{} \n export PATH=\"{}:$PATH\"", perv[1], &args[1]),
-                    format!(
-                        "source \"{}\" \n source \"{}\"",
-                        local_bash_path, local_fish_path
-                    ),
-                );
+                println!("Bash files exist , Adding to path");
+                is_everything_ok = true;
             } else {
-                println!("creating");
+                println!("Bash files not found, Creating them now");
                 create_config_dir_and_files(
                     String::clone(&local_dir_path),
                     String::clone(&local_bash_path),
@@ -93,7 +65,29 @@ fn main() {
                 );
             }
         }
+    } else {
+        println!("No argument provided. Please provide a path to add to the global PATH.");
     }
+
+    if is_everything_ok {
+        let perv = read_from_local(&local_bash_path, &local_fish_path);
+        write_to_local(
+            &local_bash_path,
+            &local_fish_path,
+            &local_vars_path,
+            format!(
+                "{} \n fish -c 'set -Ux PATH \"{}\" $PATH'",
+                perv[1], &args[1]
+            ),
+            format!("{} \n export PATH=\"{}:$PATH\"", perv[0], &args[1]),
+            format!(
+                "source \"{}\" \n source \"{}\"",
+                local_bash_path, local_fish_path
+            ),
+        );
+    }
+
+    println!("[DEBUG] Bash files path : ");
     println!("{local_bash_path}");
     println!("{local_fish_path}");
     println!("{local_vars_path}");
